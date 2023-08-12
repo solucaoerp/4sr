@@ -1,0 +1,8 @@
+.form-box {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 12px #aaa;
+    border-radius: 3px;
+}
