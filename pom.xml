@@ -1,111 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project
-		xmlns="http://maven.apache.org/POM/4.0.0"
-		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.1.2</version>
-		<relativePath />
-	</parent>
-	<groupId>com.4sr</groupId>
-	<artifactId>users</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>users</name>
-	<description>4Seniors - Desafio Cadastro de Usuários (WebApp/JSP)</description>
-	<developers>
-		<developer>
-			<id>1</id>
-			<name>Charles Borges de Melo</name>
-			<email>solucao.erp@gmail.com</email>
-			<organization>4 Seniors Brasil</organization>
-			<organizationUrl>https://www.4sr.com.br/</organizationUrl>
-			<roles>
-				<role>Developer</role>
-			</roles>
-			<timezone>x</timezone>
-		</developer>
-	</developers>
-	<properties>
-		<java.version>17</java.version>
-	</properties>
-	<dependencies>
-		<!--
+        xmlns="http://maven.apache.org/POM/4.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.1.2</version>
+        <relativePath />
+    </parent>
+    <groupId>com.4sr</groupId>
+    <artifactId>users</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>users</name>
+    <description>4Seniors - Desafio Cadastro de Usuários (WebApp/JSP)</description>
+    <developers>
+        <developer>
+            <id>1</id>
+            <name>Charles Borges de Melo</name>
+            <email>solucao.erp@gmail.com</email>
+            <organization>4 Seniors Brasil</organization>
+            <organizationUrl>https://www.4sr.com.br/</organizationUrl>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <timezone>x</timezone>
+        </developer>
+    </developers>
+    <properties>
+        <java.version>17</java.version>
+    </properties>
+    <dependencies>
+        <!--
               Dependência para utilizar o Spring Data JPA, que simplifica o acesso ao banco de dados através
               do JPA (Java Persistence API).
           -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<!--
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <!--
               Dependência para criar aplicações web com o Spring Boot, incluindo RESTful, usando o Spring MVC.
               Também traz o tomcat embutido como servidor padrão.
           -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<!--
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!--
               Dependência para usar o Tomcat como servidor de aplicação embutido.
               É útil se você quiser usar uma versão diferente da que vem com o spring-boot-starter-web ou se estiver
               desenvolvendo uma aplicação web que não seja RESTful.
           -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-tomcat</artifactId>
-		</dependency>
-		<!--
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+        </dependency>
+        <!--
               Dependência para usar o Actuator. O Spring Boot Actuator fornece funcionalidades prontas
               para produção para monitorar e gerenciar a aplicação.
           -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
-		<!--
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <!--
               Dependência essencial para trabalhar com JSP no Spring Boot.
               Ela fornece o compilador Jasper, que é necessário para interpretar páginas JSP.
           -->
-		<dependency>
-			<groupId>org.apache.tomcat.embed</groupId>
-			<artifactId>tomcat-embed-jasper</artifactId>
-		</dependency>
-		<!--
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-jasper</artifactId>
+        </dependency>
+        <!--
               Dependência para usar a JSTL (JavaServer Pages Standard Tag Library) em JSP.
               A JSTL é uma coleção de tags úteis que encapsulam lógicas comuns no JSP.
           -->
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>jstl</artifactId>
-			<version>1.2</version>
-		</dependency>
-		<!--
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
+        <!--
               Dependência para usar o banco de dados H2. O H2 é um banco de dados em memória,
               que é útil para desenvolvimento e testes.
           -->
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<!--
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <!--
               Dependência para testes. Ela fornece anotações e classes úteis para escrever testes
               com o Spring Boot.
           -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>

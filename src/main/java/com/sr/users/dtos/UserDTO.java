@@ -80,7 +80,7 @@ public class UserDTO {
         StringBuilder sb = new StringBuilder();
         sb.append("UserDTO{")
                 .append("id='").append(getId()).append('\'')
-                .append("name='").append(getName()).append('\'')
+                .append(", name='").append(getName()).append('\'')
                 .append(", email='").append(getEmail()).append('\'')
                 .append('}');
         return sb.toString();
