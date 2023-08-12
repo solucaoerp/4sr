@@ -82,6 +82,11 @@ A camada **Service** contém a lógica de negócios da aplicação. Ela se situa
         |
         v
 +-------+-------+
+|      DTO      |
++-------+-------+
+        |
+        v
++-------+-------+
 |    Service    |
 +-------+-------+
         |
