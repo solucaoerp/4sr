@@ -18,7 +18,6 @@
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Instalação e Uso](#instalação-e-uso)
 - [Como Contribuir](#como-contribuir)
-- [Créditos](#créditos)
 - [Contato](#contato)
 - [Licença](#licença)
 - [Status do Projeto](#status-do-projeto)
